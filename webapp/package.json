@@ -1,0 +1,18 @@
+{
+  "name": "test-fe",
+  "version": "1.0.0",
+  "description": "a fe server for test mock ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhaozhenyu",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.32.1",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0"
+  }
+}
