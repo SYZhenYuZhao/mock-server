@@ -1,14 +1,17 @@
 const plugins = require('./plugins')
+const path = require('path');
 
 const filename = '[name].js'
 
 let config = {
     entry:{
-        app:'../index.jsx'
+        app:'./index.jsx'
     },
     output:{
         filename,
-        path: __dirname + '/dist'
+        path: path.resolve(__dirname,'dist')
     },
     plugins
 }
+
+module.exports = config;
