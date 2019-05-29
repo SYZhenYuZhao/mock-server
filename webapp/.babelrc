@@ -3,14 +3,12 @@
        "@babel/preset-react",
        "@babel/preset-env",
     ],
-    "plugins": ["@babel/plugin-transform-runtime"],
-    "env": {
-        "development": {
-            "presets": [
-                ["@babel/preset-react", {
-                    "development": true
-                }]
-            ]
-        }
-    }
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        ["import", {
+            "libraryName": "antd",
+            "libraryDirectory": "es",
+            "style": "css" // `style: true` 会加载 less 文件
+        }]
+    ],
 }

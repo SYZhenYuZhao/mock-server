@@ -1,25 +1,19 @@
-const plugins = require('./plugins')
-//const modules = require('./module')
+const Plugins = require('./plugins')
+const Module = require('./module')
 const path = require('path')
 
 const filename = '[name].js'
 
 let config = {
     entry:{
-        app:'./index.js'
+        app:'./src/index.js'
     },
     output:{
         filename,
         path: path.resolve(__dirname,'dist')
     },
-    module: {
-        rules: [{
-            test: /\.(js|jsx)$/,
-            use: 'babel-loader',
-            exclude: /node_modules/
-        }]
-    },
-    plugins
+    module: Module,
+    plugins: Plugins
 }
 
 module.exports = config;
