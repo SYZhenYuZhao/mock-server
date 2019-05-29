@@ -6,7 +6,27 @@ import {
     numDecrement,
 } from '../../modules/home'
 
+function MakeObj () {
+    this.a = 1
+    this.b = 2
+}
+//MakeObj.prototype.obj = {}
+//MakeObj.prototype.c = 3
+
 class Home extends React.Component{
+    componentDidMount(){
+        //let obj = new MakeObj()
+        // let obj = new MakeObj()
+        // console.log(obj,'obj')
+        // let proto = obj
+        // while (Object.getPrototypeOf(proto) !== null) {
+        //     console.log(123456)
+        //     proto = Object.getPrototypeOf(proto)
+        //     console.log(proto,'proto')
+        // }
+        // console.log(Object.getPrototypeOf(obj), 'Object.getPrototypeOf(obj) ')
+        // console.log(Object.getPrototypeOf(obj) === proto)
+    }
 
     render(){
         return(<div>

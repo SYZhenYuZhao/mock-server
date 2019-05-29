@@ -16,8 +16,6 @@ store.subscribe(()=>{
     console.log('second')
     window.logInfo.push({time:new Date(),value:store.getState()})
 })
-store.observable(()=>{
-    
-})
+console.log(store)
 
 export default store
